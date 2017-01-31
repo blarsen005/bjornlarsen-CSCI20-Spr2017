@@ -4,7 +4,7 @@
  
  int main()
  {
-     cout<<"            _             "<<endl;
+     cout<<"           ___            "<<endl;
      cout<<"  _ . - '       ' - . _   "<<endl;
      cout<<" |'''''''''''''''''''''|  "<<endl;
      cout<<" |  _____       _____  |  "<<endl;
