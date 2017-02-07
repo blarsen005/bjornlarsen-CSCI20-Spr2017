@@ -33,7 +33,7 @@ Pseudocode:
      int birthsPerSec = 1/8; // These 3 variables are here for reference; not used in official calculations as variables would be assigned as zero.
      int deathsPerSec = 1/11; // See birthsPerSec comment.
      int migrantsPerSec = 1/29; // See birthsPerSec comment.
-     // birthsPerYear - deathsPerYear + migrantsPerSec = 175/2552. The reciprocal of this to the nearest integer is 15.
+     // birthsPerYear - deathsPerYear + migrantsPerSec is equivalent to 175/2552. The reciprocal of this to the nearest integer is 15.
      int peoplePerSecCoefficient = 15;
      
      cout << "Enter number of years after " << initialYear << "." << endl;
