@@ -35,18 +35,18 @@ Pseudocode:
      double preFeeValue  = 0;
      double postFeeValue = 0;
      
-     cout << "How many cents do you enter?" << endl;
+     cout << "How many cents do you enter?" << endl; //User prompt for how many cents input.
      cin >> centsInitial;
      cout << "You have entered " << centsInitial << " cents." << endl;
      
-       numQuarters    = centsInitial / 25;
+       numQuarters    = centsInitial / 25; //Divide cents by 25, 10, 5 for number of each coin, and mod for remaining cents.
        centsRemaining = centsInitial % 25;
        numDimes       = centsRemaining / 10;
        centsRemaining = centsRemaining % 10;
        numNickels     = centsRemaining / 5;
        numPennies     = centsRemaining % 5;
      
-     cout << "That was " << numQuarters << " quarters, " << numDimes << " dimes, "
+     cout << "That was " << numQuarters << " quarters, " << numDimes << " dimes, " //Display coin varieties.
           << numNickels << " nickels, and " << numPennies << " pennies." << endl;
      
      double centsInitial2  = centsInitial; // New float variable equivalent to input for cash values.
