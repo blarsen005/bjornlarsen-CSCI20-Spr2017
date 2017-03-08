@@ -2,17 +2,10 @@
 // 3/7/2017
 
 /*
-Problem Statement:
-    Create a “book” class that captures pieces of meta data about each book (title, author, copyright year). Implement the following functions in your class:
-        set functions for each variable
-        get functions for each variable
-        print function to print all of the data about a book
-    Write a main program that uses the “book” class to store and display information about the books. Create 5 objects and ask the user to input the data for each book. 
-    As the user inputs the data you should use the appropriate get function to output what they entered. After all of the data for all of the books is entered, you
-    should use the print functions to output all of the books.
-    
 Program Description:
-    
+    This program lists book data for five different books. It uses a class, set/get functions, and five objects to keep categorize this data, which
+    includes title, author, and copyright year. The final program output lists the five books titles, authors, and copyright years
+    in an organized fashion.
     
 Pseudocode:
     1) Create class "book".
@@ -38,7 +31,7 @@ using namespace std;
      private:
         string title; //Private variables can only be interacted with through get/set functions.
         string author;
-        string year;
+        int year;
         
      //In public, call a set and a get function to alter the title data member. Repeat for author and copyright year.
      public:
@@ -46,8 +39,8 @@ using namespace std;
         string GetTitle() const;
         void SetAuthor(string inputAuthor);
         string GetAuthor() const;
-        void SetYear(string inputYear);
-        string GetYear() const;
+        void SetYear(int inputYear);
+        int GetYear() const;
         void PrintBookInfo();
  };
  
@@ -72,12 +65,12 @@ using namespace std;
  }
  
  //Copyright Year
- void Book::SetYear(string inputYear) {
+ void Book::SetYear(int inputYear) {
      year = inputYear;
      return;
  }
  
- string Book::GetYear() const {
+ int Book::GetYear() const {
      return year;
  }
  
@@ -99,7 +92,7 @@ using namespace std;
      //In main, create variables for user input title, author, and copyright year.
      string inputTitle;
      string inputAuthor;
-     string inputYear;
+     int inputYear;
      
      //Prompt user to input information for the first book, starting with title, and then running getTitle. Repeat for each variable and each book.
      
