@@ -39,7 +39,7 @@ Pseudocode:
 using namespace std;
 
 //Create class "DistanceConverter".
-class DistanceConverter {
+class DistanceConverter { //This class is based on accepting various inputs distance values, converting to feet, and outputting as other distance values.
     
     //In private, store data in "feet_".
     private:
@@ -47,50 +47,55 @@ class DistanceConverter {
         
     //In public, define converter functions
     public:
-        //SetDistanceFromFeet - accepts a feet value and stores it.
+    /*
+    These functions are the set/get functions. The set functions accept user input values and "output" them as feet in the private variable.
+    The get functions accept the "input" from feet and output them as a conversion to whatever distance unit is desired.
+    */
+        //SetDistanceFromFeet - accepts a feet value and stores it. Input: feet Output: feet
         void SetDistanceFromFeet(double ft) {
             feet_ = ft;
             return;
         }
         
-        //SetDistanceFromInches - accepts an inches value and converts it to feet.
+        //SetDistanceFromInches - accepts an inches value and converts it to feet. Input: inches Output: feet
         void SetDistanceFromInches(double in) {
             feet_ = in / 12;
             return;
         }
-        
-        //SetDistanceFromYards - accepts a yards value and converts it to feet.
+     
+        //SetDistanceFromYards - accepts a yards value and converts it to feet. Input: yards Output: feet
         void SetDistanceFromYards(double yd) {
             feet_ = yd * 3;
             return;
         }
         
-        //SetDistanceFromMiles - accepts a miles value and converts it to feet.
+        //SetDistanceFromMiles - accepts a miles value and converts it to feet. Input: miles Output: feet
         void SetDistanceFromMiles(double mi) {
             feet_ = mi * 5280;
             return;
         }
         
-        //GetDistanceAsFeet - returns the feet value.
+        //GetDistanceAsFeet - returns the feet value. Input: feet Output: feet
         double GetDistanceAsFeet() {
             return feet_;
         }
         
-        //GetDistanceAsInches - returns an inches value based on feet.
+        //GetDistanceAsInches - returns an inches value based on feet. Input: feet Output: inches
         double GetDistanceAsInches() {
             return feet_ * 12;
         }
         
-        //GetDistanceAsYards - returns a yards value based on feet.
+        //GetDistanceAsYards - returns a yards value based on feet. Input: feet Output: yards
         double GetDistanceAsYards() {
             return feet_ / 3;
         }
         
-        //GetDistanceAsMiles - returns a miles value based on feet.
+        //GetDistanceAsMiles - returns a miles value based on feet. Input: feet Output: miles
         double GetDistanceAsMiles() {
             return feet_ / 5280;
         }
         
+    //These functions call the get functions in order to output the data in an organized fashion when called in main.
         //Create a general print function that prints all data types for miles, yards, feet, and inches.
         void PrintDistances() {
             cout << "Inches: " << GetDistanceAsInches() << endl;
@@ -122,6 +127,7 @@ class DistanceConverter {
             return;
         }
         
+    //The constructor functions here automatically set values to private data members (feet_)
         //Call the constructor function and the overloaded constructor function
         DistanceConverter();
         DistanceConverter(double ft);
