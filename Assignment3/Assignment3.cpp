@@ -75,8 +75,8 @@ Pseudocode:
 #include <ctime>
 using namespace std;
 
-//Create "Game" class
-class Game {
+//Create "Computer" class
+class Computer {
     
     private:
         
@@ -137,14 +137,97 @@ class Game {
             return;
         }
         
+        //Accessor function to return selection (computer and player)
+        string GetChoice() { //For use in telling player results
+            return choice_;
+        }
+        
+        int GetChoiceInteger() { //For use in determining outcome of results
+            return choice_integer;
+        }
+        
+        //Mutator function: while loop with nested switch case to turn number of rounds into rounds needed to win
+        void SetNumRoundsToWin(int& rounds) { //& used to ascribe rounds a value of zero to reactive do-while loop in main
+                
+            switch (rounds) { 
+                
+                case 3: //These cases are equivalent to the operation: rounds_to_win = rounds / 2 + 1
+                    rounds_to_win = 2;
+                    break;
+                    
+                case 5:
+                    rounds_to_win = 3;
+                    break;
+                    
+                case 7:
+                    rounds_to_win = 4;
+                    break;
+                
+                //Default is to reenter number of rounds, while loop repeats
+                default:
+                    rounds = 0; //This is just a convention to active the loop
+                    break;
+            }
+        }
+        
+        //Accessor function called in round of play
+        int GetNumRoundsToWin() {
+            return rounds_to_win;
+        }
+        
+        //Function to adjust round parameters
+        void IncreaseNumRoundsWon() {
+            rounds_won = rounds_won + 1;
+            return;
+        }
+        
+        //Function to return rounds won
+        int GetNumRoundsWon() {
+            return rounds_won;
+        }
+        
+        //Constructor Function
+        Computer();
+};
+
+//Create "Player" class
+Computer::Computer() {
+    rounds_to_win = 2;
+    rounds_won = 0;
+    choice_ = "rock";
+    choice_integer = 0;
+    return;
+}
+
+
+class Player {
+    
+    private:
+        
+        //Rounds computer/player needs to win
+        int rounds_to_win;
+        
+        //Rounds computer/player has won
+        int rounds_won;
+        
+        //Choice (RPSLS)
+        string choice_;
+        
+        //Choice as an integer (for use in switch case)
+        int choice_integer;
+        
+    public:
+        
         //Mutator function to select player's choice
         void SetPlayerChoice(string choice) {
             
             //Takes user input
             choice_ = choice;
+            choice_integer = 0;
             
             //Do-while loop to set choice in private data.
-            do {
+            while (choice_integer == 0) {
+                
                 if (choice_ == "rock") {
                     choice_integer = 1;
                 }
@@ -170,9 +253,8 @@ class Game {
                     cout << "Not a valid choice. Enter rock, paper, scissors, lizard, or spock: ";
                     cin >> choice;
                     choice_ = choice;
-                    choice_integer = 0; //This is just a convention to active the loop
                 } 
-            } while (choice_integer == 0); //Loop repeats when "else" option occurs
+            }
             return;
         }
         
@@ -226,11 +308,11 @@ class Game {
         }
         
         //Constructor Function
-        Game();
+        Player();
 };
 
 //Constructors: set number of rounds to 3, computer and player to rock
-Game::Game() {
+Player::Player() {
     rounds_to_win = 2;
     rounds_won = 0;
     choice_ = "rock";
@@ -241,13 +323,13 @@ Game::Game() {
 int main() {
     
     string choice = "rock";
-    int rounds = 3;
+    int rounds = 0;
     
-    Game computer;
-    Game player;
+    Computer computer;
+    Player player;
     
     //User cin number of rounds
-    do {
+    while (rounds == 0) {
         
         cout << "Set number of rounds (3, 5, or 7): ";
         cin >> rounds;
@@ -255,7 +337,7 @@ int main() {
         //Call mutator function for rounds needed for computer/player to win
         computer.SetNumRoundsToWin(rounds);
         player.SetNumRoundsToWin(rounds);
-    } while (rounds == 0); //Setter function uses & to set value of rounds to zero
+    }
     
     cout << endl;
     
