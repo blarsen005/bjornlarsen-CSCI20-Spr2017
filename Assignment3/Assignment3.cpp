@@ -78,6 +78,7 @@ using namespace std;
 //Create "Computer" class
 class Computer {
     
+    //Create private data members for rounds to win, rounds that have been won, choice, and choice integer
     private:
         
         //Rounds computer/player needs to win
@@ -92,6 +93,7 @@ class Computer {
         //Choice as an integer (for use in switch case)
         int choice_integer;
         
+    //In public, create mutator/accessor functions for choices and rounds, and declare constructor.
     public:
         
         //Mutator function to select random option for computer's choice (rock, paper, scissors, lizard, or spock)
@@ -199,9 +201,10 @@ Computer::Computer() {
     return;
 }
 
-
+//Create "Player" class
 class Player {
     
+    //Create private data members for rounds to win, rounds that have been won, choice, and choice integer
     private:
         
         //Rounds computer/player needs to win
@@ -216,6 +219,7 @@ class Player {
         //Choice as an integer (for use in switch case)
         int choice_integer;
         
+    //In public, create mutator/accessor functions for choices and rounds, and declare constructor.
     public:
         
         //Mutator function to select player's choice
