@@ -40,12 +40,12 @@ class ArrayTools {
     //In private: array
     private:
         
-        int array_[10] = {0, 1, 2, 3, 4, 20, 0, -10}; //Number in brackets indicates number of array values. Using 20 for testing.
+        int array_[10]; //Number in brackets indicates number of array values. Using 20 for testing.
     
     public:
         
         //Print – print the array values on the screen in order
-        void PrintFunct() {
+        void Print() {
             
             cout << "Array Values: ";
             
@@ -57,33 +57,33 @@ class ArrayTools {
         }
         
         //Find_min – search the array between two sizes to return the location of the minimum value in that part of the array
-        void Find_min() {
+        int Find_min(int j, int k) {
             
             int minVal = array_[0]; //minVal stores first value of array by default
             
-            for (int i = 0; i < 10; i++) { //Incrementing up each array
+            for (int i = j; i <= k; i++) { //Incrementing through 0 - 4
                 if (array_[i] <= minVal) { //Only stores new minVal when array is less
                     minVal = array_[i];
                 }
             }
-            cout << "Minimum: " << minVal << endl; //Final value
+            return minVal; //Final value
         }
         
         //Find_max – search the array between two sizes to return the location of the maximum value in that part of the array
-        void Find_max() {
+        int Find_max(int j, int k) {
             
             int maxVal = array_[0]; //maxVal stores first value of array by default
             
-            for (int i = 0; i < 10; i++) { //Incrementing up each array
+            for (int i = j; i < k; i++) { //Incrementing up each array
                 if (array_[i] >= maxVal) { //Only stores new maxVal when array is greater
                     maxVal = array_[i];
                 }
             }
-            cout << "Maximum: " << maxVal << endl; //Final value
+            return maxVal; //Final value
         }
         
         //Find_sum – return the sum of all values in the array
-        void SumFunct() {
+        int Find_sum() {
             
             int sum = 0;
             
@@ -91,11 +91,11 @@ class ArrayTools {
                 sum = sum + array_[i]; 
             }
             
-            cout << "Sum: " << sum << endl; //Final value
+            return sum; //Final value
         }
         
         //Num_even/odd – count the number of even and odd numbers in the array
-        void CountEvenOddFunct() {
+        void CountEvenOdd() {
             
             int numEven = 0;
             int numOdd = 0;
@@ -113,31 +113,25 @@ class ArrayTools {
             
             cout << "Number of even values: " << numEven << endl;
             cout << "Number of odd values: " << numOdd << endl;
+            
+            return;
         }
         
         //Search – search the array for a specified value and return the location if the value is found and -1 otherwise
-        void SearchFunct() {
-            
-            int searchVal = 0;
-            cout << "Input search value: ";
-            cin >> searchVal;
-            bool valFound = false;
+        int Search(int searchVal) {
             
             for (int i = 0; i < 10; i++) {
                 
                 if (array_[i] == searchVal) {
-                    valFound = true;
-                    cout << "Value located at: " << i << endl;
+                    return i;
                 }
             }
             
-            if (valFound == false) {
-                cout << -1 << endl;
-            }
+            return -1;
         }
         
         //Is_sorted – check to see of the array is sorted in ascending order
-        void CheckSortingFunct() {
+        char Is_sorted() {
             
             bool arrayInOrder = true;
             
@@ -149,21 +143,22 @@ class ArrayTools {
             }
             
             if (arrayInOrder == true) {
-                cout << "Array is in ascending order." << endl;
+                return 'Y';
             }
             
             else {
-                cout << "Array is not in ascending order." << endl;
+                return 'N';
             }
         }
         
-        ArrayTools();
+        ArrayTools(int myArray[]) {
+            
+            for (int i = 0; i < 10; i++) {
+                array_[i] = myArray[i];
+            }
+            return;
+        }
 };
-
-ArrayTools::ArrayTools() {
-    array_[10] = {0, 1, 2, 3, 4, 20, 0, -10};
-    return;
-}
 
 int main()
 {
@@ -171,14 +166,16 @@ int main()
     int myArray[SIZE];
     
     for(int i = 0; i<SIZE;i++){
-        cin<<myArray[i];
+        cin>>myArray[i];
     }
+    
     ArrayTools a(myArray);
     
     a.Print();
     cout<<"Min: "<<a.Find_min(0, 4)<<endl;
     cout<<"Max: "<<a.Find_max(5, 10)<<endl;
     cout<<"Sum = "<<a.Find_sum()<<endl;
+    a.CountEvenOdd(); //Added manually to main
     cout<<"Search 10"<<a.Search(10)<<endl;
     cout<<"Sorted? "<<a.Is_sorted()<<endl;
     
