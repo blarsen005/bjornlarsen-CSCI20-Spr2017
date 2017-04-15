@@ -46,12 +46,12 @@ Pseudo-code:
 #include <iostream>
 using namespace std;
 
-const int SIZE = 10;
+const int SIZE = 10; //10 different store items
 
 //Online Shopping Cart class
 class OnlineShoppingCart {
     
-    private:
+    private: //The 3 parallel arrays:
         
         //Initialize inventory array
         int inventory_[SIZE];
@@ -62,10 +62,10 @@ class OnlineShoppingCart {
         //Initialize price array
         int price_[SIZE];
     
-    public:
+    public: //2 functions and a constructor
     
         //Add Item Function
-        void AddItem(int item) {
+        void AddItem(int item) { //No for loop necessary because specific array value is being refernced
             
             //If inventory array value is zero, item out of stock
             if (inventory_[item] == 0) {
@@ -89,14 +89,14 @@ class OnlineShoppingCart {
             int totalCost = 0;
             
             for (int i = 0; i < SIZE; i++) {
-                totalCost = totalCost + (shopping_cart[i] * price_[i]);
+                totalCost = totalCost + (shopping_cart[i] * price_[i]); //Quantity times price for each value added up.
             }
             
             return totalCost;
         }
         
         //Constructor
-        OnlineShoppingCart(int price[], int inventory[], int shoppingCart[]) {
+        OnlineShoppingCart(int price[], int inventory[], int shoppingCart[]) { //Initialize each parameter as array.
             
             for (int i = 0; i < SIZE; i++) {
                 price_[i] = price[i];
@@ -132,7 +132,7 @@ int main() {
     //Initialize shopping cart array (10 items of amount 0)
     int shoppingCart[SIZE] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
     
-    OnlineShoppingCart Cart(price, inventory, shoppingCart);
+    OnlineShoppingCart Cart(price, inventory, shoppingCart); //Constructor call parameter do not need []
     
     cout << "Welcome! Here are our items:" << endl;
     cout << "Item 1:  Potato:                                   P - $2   Q - 20" << endl;
@@ -153,11 +153,11 @@ int main() {
     cin >> item;
     
     //Add Item Function in while loop
-    while (item != 0) {
+    while (item != 0) { //Zero quits loop
         
-        item--;
+        item--; //This is necessary because array value locations are 0-9 not 1-10
         
-        if (item > 10 || item < 0) {
+        if (item > 9|| item < 0) {
             cout << "Invalid. ";
         }
         
