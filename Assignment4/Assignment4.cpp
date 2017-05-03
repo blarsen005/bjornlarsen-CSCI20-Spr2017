@@ -18,7 +18,7 @@ Program Description:
     
 Pseudocode:
     Include fstream
-    Class word (using Char Arrays)
+    Class word (using Array of Objects)
         the word
         number of times the word appears
         line where word is located
@@ -51,7 +51,7 @@ using namespace std;
 
 const int NUM_WORDS = 26; //File contains 26 words
 
-//Class word (using Char Arrays)
+//Class word (using Array of Objects)
 class Word {
     
     private:
