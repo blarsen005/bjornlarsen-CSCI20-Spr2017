@@ -1,0 +1,4 @@
+Line # | Number of times used | Word
+____________________________________________
+ 2        1                     curds
+       |                      |     
