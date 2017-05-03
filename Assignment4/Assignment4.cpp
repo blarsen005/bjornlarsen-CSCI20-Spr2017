@@ -1,24 +1,20 @@
 // Bjorn Larsen
 // 5/2/2017
 
-//http://www.cplusplus.com/forum/general/116262/
-
 /*
-Problem Statement:
-
-    Concordance - A concordance is a compendium of words in a particular text You can select any word, using its
-    first letter, find how many times it was used, what works it occurred in and the local context of the words it occurred in.
-    
-    Your program will prompt the user for a text file to analyze. You will use the provided file of stop words – words
-    that will be ignored when you analyze the file. After creating the concordance, print the concordance results in nicely
-    formatted columns to both the screen and an output file. For each word in the concordance you will print:
-    
-        The word
-        The total number of occurrences
-        The first location of occurrence
-    
-Problem Statement:
-    
+Program Description:
+    This program creates a concordance out of a pre set file called "little_miss_muffet.txt" containing the following text:
+        
+        Little Miss Muffet sat on a tuffet
+        Eating her curds and whey,
+        Along came a spider,
+        Who sat down beside her
+        And frightened Miss Muffet away
+        
+    The concordence is limited also by a stop text "english.stop.txt", the words in this file are not used for the final concordence. In addition, 
+    the program outputs the concordence in terms of the line it was first found in, the number of times the word was output, and the word name itself.
+    Outputs to console and to a file labelled as "output.txt". Both input files can work with changes but input text file can only include up to 26
+    words in the concordence since that is the number of words present in the initial file.
     
 Pseudocode:
     Include fstream
