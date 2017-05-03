@@ -2,3 +2,19 @@ Line # | Number of times used | Word
 ____________________________________________
  2        1                     curds
        |                      |     
+ 2        1                     eating
+       |                      |     
+ 5        1                     frightened
+       |                      |     
+ 1        2                     miss
+       |                      |     
+ 1        2                     muffet
+       |                      |     
+ 1        2                     sat
+       |                      |     
+ 3        1                     spider
+       |                      |     
+ 1        1                     tuffet
+       |                      |     
+ 2        1                     whey
+       |                      |     

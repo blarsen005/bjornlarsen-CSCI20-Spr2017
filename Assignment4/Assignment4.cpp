@@ -221,15 +221,14 @@ int main() {
             i = NUM_WORDS; //Ends loop
         }
         
-        else if (word[i].OutputBool() != true){
+        else if (word[i].OutputBool() != true) { //Tests if concordence for the word has already been output
             
-            for (j = 0; j < NUM_WORDS; j++) {
+            for (j = 0; j < NUM_WORDS; j++) { //Now the object represented by i will be tested against every other object
                 
                 if (word[j].OutputWord() == "N/A") { //Each word in array of objects pre-set to N/A
                     j = NUM_WORDS; //Ends loop
                 }
-                
-                else if (word[i].OutputWord().front() > word[j].OutputWord().front()) {
+                else if (word[i].OutputWord().front() > word[j].OutputWord().front() && word[j].OutputBool() != true) { //Condition met if value of first character for i is lower than any first char value for j
                     alphabetical = false;
                 }
             }
@@ -239,8 +238,8 @@ int main() {
                 cout << "       |                      |     " << endl;
                 fout << " " << word[i].OutputLocation() << "        " << word[i].OutputCount() << "                     " << word[i].OutputWord() << endl;
                 fout << "       |                      |     " << endl;
-                word[i].WordHasBeenOutput();
-                i = 0;
+                word[i].WordHasBeenOutput(); //Allows loop to skip this i value
+                i = -1; //Restarts loop
             }
         }
     }
