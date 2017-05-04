@@ -49,7 +49,7 @@ Pseudocode:
 #include <cctype>
 using namespace std;
 
-const int NUM_WORDS = 26; //File contains 26 words
+const int NUM_WORDS = 26; //Cannot adjust array size based on input file
 
 //Class word (using Array of Objects)
 class Word {
@@ -140,13 +140,36 @@ int main() {
     Word word[NUM_WORDS]; //Array of objects to create an object for each word in the concordance
     
     //File Input with file to analyze
-    fin.open("little_miss_muffet.txt"); //Using file "little_miss_muffet.txt" in folder
+    char inputFile;
+    while (inputFile != 'Y' && inputFile != 'N') {
+        cout << "Input file? (Y or N): ";
+        cin >> inputFile;
+        if (inputFile == 'Y') {
+            string file;
+            cout << "Enter file name: ";
+            cin >> file;
+            fin.open(file);
+            if (fin.good() == false) {
+                cout << "Invalid. ";
+                inputFile = 'X';
+            }
+        }
+        else if (inputFile == 'N') {
+            cout << "Okay. Using pre-set file 'little_miss_muffet.txt'" << endl;
+            fin.open("little_miss_muffet.txt"); //Using file "little_miss_muffet.txt" in folder
+        }
+        else {
+            cout << "Invalid. ";
+        }
+    }
     
     //File input with stop text
     finstop.open("english.stop.txt"); //Using stop text in folder
     
     //File output
     fout.open("output.txt");
+    
+    
     
     //Read fin file
     while (!fin.eof()) {
@@ -164,6 +187,7 @@ int main() {
             for (i = 0; i < inputWord.length(); i++) {
                 if (ispunct(inputWord[i])) { //removing punctuation
                     inputWord.erase(i, 1);
+                    i = 0;
                 }
                 inputWord[i] = tolower(inputWord[i]); //changing all to lowercase
             }
