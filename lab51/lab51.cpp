@@ -26,46 +26,46 @@ int main() {
 
     cout << "Your word is " << firststr << endl; //ERROR: firststr is not initialized
     
-    if (nameLength<10)
+    if (nameLength<10) //Condition based on prior char array size
     {
-         while (*head != '\0')
+         while (*head != '\0') //When account for null terminator the size in the condition above should be 11
          {
-                cout << *head;
-                head++;
+                cout << *head; //outputs character in name, as head points to
+                head++; //array value increments up (like with array[i])
          }
      }
      else
-     {
+     { //Because above condition must be less than 10, a 10 letter word or higher will be too big
           cout << "WARNING WORD TOO BIG TO DISPLAY!!" << endl;
      }
 
      cout << endl;
 
-     tail = &name[strlen(name) - 1];
+     tail = &name[strlen(name) - 1]; //Associates tail with the final character of tail
 
-     if (nameLength < 10)
+     if (nameLength < 10) //Condition based on prior char array size
      {
-          while (tail != name)
+          while (tail != name) //Runs until tail character is the same as name character
           {
-                 cout << *tail;
+                 cout << *tail; //So it will output the name backwards until the letter
                  tail--;
           }
      }
      cout << endl;
 
-     head = name;
-     tail = &name[strlen(name) - 1];
+     head = name; //Resets head (full name)
+     tail = &name[strlen(name) - 1]; //Resets tail (final character of name)
 
-     head++;
-     tail--;
+     head++; //Head now will point to second character first
+     tail--; //Tail now will point to second to last character first
 
-     if (*head == *tail)
-     {
-         cout << "It is an palindrome!" << endl;
+     if (*head == *tail) //second letter of name equal to second to last letter of name; logical error
+     { //logical error as all the first and last part of the name would need to mirror each other, not just the second letters
+         cout << "It is an palindrome!" << endl; //typo
      }
      else
      {
-         cout << "It is not an palindrome" << endl;
+         cout << "It is not an palindrome" << endl; //typo
      }
 
      return 0; 
