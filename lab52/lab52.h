@@ -1,7 +1,3 @@
-
-using namespace std;
+#include "MyClass.h"
 
 int randomNumber();
-
-// Program starts here
-int main();

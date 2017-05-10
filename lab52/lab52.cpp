@@ -1,8 +1,4 @@
 #include "lab52.h"
-#include "MyClass.h"
-#include <cstdlib>
-#include <ctime>
-using namespace std;
 
 int randomNumber(){
    srand(time(0));
