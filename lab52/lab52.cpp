@@ -1,26 +1,14 @@
-// Bjorn Larsen
-// 5/7/2017
-
-/*
-To run your program you need to following commands in order:
-Open a terminal from your folder (right click on your folder and open new terminal window)
-g++ -Wall -g -c lab21.cpp     
-This compiles the file with the main function. If you named it differently, you should change the name from lab21 to your file name
-This should create a file called lab21.o
-g++ -Wall -g -c MyClass.cpp
-This compiles the class. If you named it differently, you should change the name from MyClass.cpp to your file name
-This should create a file called MyClass.o
-g++ -Wall -g -o lab21exe lab21.o MyClass.o
-This compiles the two object files into an executable named lab21exe.
-./lab21exe
-run this to test that your program works.
-*/
-
+#include "lab52.h"
+#include "MyClass.h"
+#include <cstdlib>
+#include <ctime>
 using namespace std;
 
-int randomNumber();
+int randomNumber(){
+   srand(time(0));
+   return ((rand()% 10) + 1);
+}
 
-// Program starts here
 int main() {
   // Create a MyClass Object
   MyClass object;
