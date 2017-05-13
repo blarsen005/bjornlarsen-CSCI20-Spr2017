@@ -1,0 +1,16 @@
+STEP1
+/*
+You are about to create your character for Dungeons and Dragons,
+5th edition. This program will mostly be using the standard races,
+classes and rules from the 5e Player's Handbook. You can get more
+information about the character creation process using the handbook,
+or you can learn more later throughout the program.
+*/
+
+HEY HEY HEY!!!!
+
+STEP2
+/*
+Yo yo yo up in the ohhhhhhh
+o shit waddup
+*/
