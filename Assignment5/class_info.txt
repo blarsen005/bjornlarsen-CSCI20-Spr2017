@@ -1,0 +1,190 @@
+Info from player's handbook.
+
+Barbarian
+/*
+A fierce warrior of primitive background who can enter a battle rage. You can later choose between the
+Path of the Berserker, and the Path of the Totem Warrior.
+Hit die: d12
+Primary ability: Strength
+Saving throw proficiencies: Strength, Constitution
+Armor and Weapon Proficiencies: Light and medium armor, shields, simple and martial weapons.
+Skills: Choose two from Animal Handling, Athletics, Intimidation, Nature, Perception, and Survival.
+Barbarian Features: Rage, Unarmored Defense
+*/
+
+Bard
+/*
+An inspiring magician whose power echoes the music of creation. You can later choose your Bard College:
+The College of Lore, or the College of Valor.
+Hit die: d8
+Primary ability: Charisma
+Saving throw proficiencies: Dexterity, Charisma
+Armor and Weapon Proficiencies: Light armor, simple weapons, hand crossbows, longswords,
+rapiers, shortswords.
+Skills: Choose any three.
+Bard Features: Spellcasting, Bardic Inspiration
+*/
+
+Cleric
+/*
+A priestly champion who wields divine magic in service of a higher power. Choose one domain related to
+your deity: Knowledge, Life, Light, Nature, Tempest, Trickery, or War.
+Hit die: d8
+Primary ability: Wisdom
+Saving throw proficiencies: Wisdom, Charisma
+Armor and Weapon Proficiencies: Light and medium armor, shields, simple weapons.
+Skills: Choose two from History, Insight, Medicine, Persuasion, and Religion.
+Cleric Features: Spellcasting, Divine Domain
+.
+Divine Domains:
+Knowledge: Values learning and understanding above all. Learn two languages of your choice, and gain proficiency
+in your choice of two of the following skills: Arcana, History, Nature, or Religion. Your proficiency bonus is
+doubled for any ability check you make that uses either of those skills.
+Life: Focuses on the vibrant positive energy that sustains all life. Gain proficiency with heavy armor, and your
+healing spells are more effective.
+Light: Promotes the ideals af rebirth and renewal, truth, vigilance, and beauty, often using the symbol of the sun.
+Gain the light cantrip if you don't already know it, and you can interpose divine light between yourself and an
+attacking enemy.
+Nature: Learn one druid cantrip of your choice, and gain proficiency in one of the following skills of your choice:
+Animal Handling, Nature, or Survival. Also gain proticiency with heavy armor.
+Tempest: Gods of tempest govern storms, sea, and sky. Gain proficiency with martial weapons and heavy armor, and
+you can thunderously rebuke attackers.
+Trickery: Stands as a constant challenge to the accepted order among both gods and mortals. You can use your action
+to touch a willing creature other than yourself to give it advantage on Dexterity (Stealth) checks.
+War: Battle-focused, inspiring others to fight the good fight or offering acts of violence as prayers. Gain proficiency
+with martial weapons and heavy armor. Your god delivers bolts of inspiration to you while you are engaged in battle.
+*/
+
+Druid
+/*
+A priest of the Old Faith, wielding the powers of nature — moonlight and plant growth,
+fire and lightning — and adopting animal forms. You can later identify with a circle of druids:
+the Circle of the Land or the Circle of the Moon.
+Hit die: d8
+Primary ability: Wisdom
+Saving throw proficiencies: Intelligence, Wisdom
+Armor and Weapon Proficiencies: Light and medium armor (nonmetal), shields (nonmetal),
+clubs, daggers, darts, javelins, maces, quarterstaffs, scimitars, sickles, slings, spears.
+Skills: Choose two from Arcana, Animal Handling, Insight, Medicine, Nature, Perception, Religion, and Survival.
+Druid Features: Druidic, Spellcasting
+*/
+
+Fighter
+/*
+A master of martial combat, skilled with a variety of weapons and armor. You can later choose an
+archetype that you strive to emulate in your combat styles and techniques, being either Champion,
+Battle Master, or Eldritch Knight.
+Hit die: d10
+Primary ability: Strength or Dexterity
+Saving throw proficiencies: Strength, Constitution
+Armor and Weapon Proficiencies: All armor, shields, simple and martial weapons.
+Skills: Choose two skills from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, and Survival.
+Fighter Features: Fighting Style, Second Wind
+*/
+
+Monk
+/*
+A master of martial arts, harnessing the power of the body in pursuit of physical and
+spiritual perfection. You can later commit yourself to a monastic tradition: the Way of the Open
+Hand, the Way of Shadow, or the Way of the Four Elements.
+Hit die: d8
+Primary ability: Dexterity & Wisdom
+Saving throw proficiencies: Strength, Dexterity
+Armor and Weapon Proficiencies: Simple weapons, shortswords.
+Skills: Choose two from Acrobatics, Athletics, History, Insight, Religion, and Stealth.
+Monk Features: Unarmored Defense, Martial Arts
+*/
+
+Paladin
+/*
+A holy warrior bound to a sacred oath. Later on you can swear the oath that binds you as a paladin forever, 
+choosing the Oath of Devotion, the Oath of the Ancients, ar the Oath of Vengeance.
+Hit die: d10
+Primary ability: Strength & Charisma
+Saving throw proficiencies: Wisdom, Charisma
+Armor and Weapon Proficiencies: All armor, shields, simple and martial weapons.
+Skills: Choose two from Athletics, Insight, Intimidation, Medicine, Persuasion, and Religion.
+Paladin Features: Divine Sense, Lay on Hands
+*/
+
+Ranger
+/*
+A warrior who uses martial prowess and nature magic to combat threats on the edges
+of civilization. You can later choose to emulate the ideals and	training of	a ranger conclave:
+the Beast Conclave, the Hunter Conclave, or the Stalker Conclave.
+Hit die: d10
+Primary ability: Dexterity & Wisdom
+Saving throw proficiencies: Strength, Dexterity
+Armor and Weapon Proficiencies: Light and medium armor, shields, simple and martial weapons.
+Skills: Choose three from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, and Survival.
+Ranger Features: Favored Enemy,	Natural	Explorer
+*/
+
+Rogue
+/*
+A scoundrel who uses stealth and trickery to overcome obstacles and enemies. Later on you can choose
+an archetype that you emulate in the exercise of your rogue abilities: Thief, Assassin, or Arcane Trickster.
+Hit die: d8
+Primary ability: Dexterity
+Saving throw proficiencies: Dexterity, Intelligence
+Armor and Weapon Proficiencies: Light armor, simple weapons, hand crossbows, longswords,
+rapiers, shortswords.
+Skills: Choose four from Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception,
+Performance, Persuasion, Sleight of Hand, and Stealth.
+Rogue Features: Expertise, Sneak Attack, Thieves' Cant
+*/
+
+Sorcerer
+/*
+Spellcaster who draws on inherent magic from a gift or bloodline. Choose a sorcerous origin, which describes the
+source of your innate magical power: Draconic Bloodline or Wild Magic.
+Hit die: d6
+Primary ability: Charisma
+Saving throw proficiencies: Constitution, Charisma
+Armor and Weapon Proficiencies: Daggers, darts, slings, quarterstaffs, light crossbows.
+Skills: Choose two from Arcana, Deception, Insight, Intimidation, Persuasion, and Religion.
+Sorcerer Features: Spellcasting, Sorcerous Origin
+.
+Sorcerous Origins:
+Draconic Bloodline: Your innate magic comes from draconic magic that was mingled with your blood or that of your ancestors.
+You choose one type of dragon as your ancestor. At 1st level, your hit point maximum increases by 1 and increases by 1 again
+whenever you gain a level in this c1ass. Additionally, parts of your skin are covered by a thin sheen of dragon-like scales.
+When you aren't wearing armor, your AC equals 13 + your Dexterity modifier.
+Wild Magic: Your innate magic comes from the wild forces of chaos that underlie the order of creation. Your spellcasting can
+unleash surges of untamed magic, and you can manipulate the forces of chance and chaos to gain advantage on one attack roll,
+ability check, or saving throw.
+*/
+
+Warlock
+/*
+A wielder of magic that is derived from a bargain with an extraplanar entity. You have struck a bargain with an
+otherworldly being of your choice: the Archfey, the Fiend, or the Great Old One.
+Hit die: d8
+Primary ability: Charisma
+Saving throw proficiencies: Wisdom, Charisma
+Armor and Weapon Proficiencies: Light armor, simple weapons.
+Skills: Choose two skills from Arcana, Deception, History, intimidation, Investigalion, Nature, and Religion.
+Warlock Features: Otherworldly Patron, Pact Magic
+.
+Otherworldly Patron:
+Archfey: Your patron is a lord or lady of the fey, a creature of legend who holds secrets that were forgotten before the
+mortal races were born. Your patron bestows upon you the ability to project the beguiling and fearsome presence of the fey.
+The Fiend: You have made a pact with a fiend from the lower planes of existence, a being whose aims are evil, even if you
+strive against those aims. If you reduce a hostile creature to O hit points, you gain temporary hit points equal to your
+Charisma modifier + your warlock level.
+The Great Old One: Your patron is a mysterious entity whose nature is utterly foreign to the fabric of reality. You can communicate
+telepathically with any creature you can see within 30 feet of you.
+*/
+
+Wizard
+/*
+A scholarly magic-user capable of manipulating the structures of reality. You can later choose an arcane tradition,
+shaping your practice of magic through one of eight schools: Abjuration, Conjuration, Oivination, Enchantment,
+Evocation, lllusion, Necromancy, or Transmutation.
+Hit die: d6
+Primary ability: Intelligence
+Saving throw proficiencies: Intelligence, Wisdom
+Armor and Weapon Proficiencies: Daggers, darts, slings, quarterstaffs, light crossbows.
+Skills: Choose two from Arcana, History, Insight, Investigation, Medicine, and Religion.
+Wizard Features: Spellcasting, Arcane Recovery
+*/

@@ -1,0 +1,82 @@
+DUNGEON AND DRAGONS, 5TH EDITION CHARACTER SHEET
+
+ - - - - GENERAL INFO - - - - 
+Character Name: Tibby
+Alignment: NG
+Level: 1
+Experience Points: 0
+Class: Gold Draconic Bloodline Sorcerer
+Race: Gold Dragonborn
+Background: Detailed below
+Player Name: - 
+
+ - - - - STATS - - - - 
+Strength: 10  Modifier: 0
+Dexterity: 12  Modifier: 1
+Constitution: 9  Modifier: -1
+Intelligence: 12  Modifier: 1
+Wisdom: 14  Modifier: 2
+Charisma: 17  Modifier: 3
+
+ - - - - SKILLS AND SAVING THROWS - - - - 
+Inspiration: None
+Proficiency Bonus: 2
+Passive Perception: 12
+
+Str Saving Throw: 0
+Dex Saving Throw: 1
+Con Saving Throw: 1
+Int Saving Throw: 1
+Wis Saving Throw: 2
+Cha Saving Throw: 5
+
+Skills with proficiency (Make sure this matches with below data): N/A
+Athletics: 0
+Acrobatics: 1
+Stealth: 1
+Sleight of Hand: 1
+Arcana: 1
+Nature: 1
+History: 1
+Religion: 1
+Investigation: 1
+Animal Handling: 2
+Perception: 2
+Insight: 2
+Survival: 2
+Medicine: 2
+Deception: 3
+Performance: 3
+Intimidation: 3
+Persuasion: 3
+
+ - - - - COMBAT STATS - - - - 
+Armor Class: 11
+Initiative: 1
+Speed: 30
+Hit Point Maximum: 6
+Hit Die: 1d6
+
+ - - - - FEATURES, TRAITS, AND LANGUAGES - - - - 
+Features: Spellcasting, Draconic Resilience
+Traits: Breath Weapon, Damage Resilience
+Languages: Common, Draconic
+
+ - - - - WEALTH AND EQUIPMENT - - - - 
+Starting Wealth (Treasure): 59 gp
+Armor: None
+Weapon: Quarterstaff
+Atk Bonus: 1d20+2
+Damage Bonus: 1d6+0
+Other Equipment: component pouch, explorer's pack
+
+ - - - - SPELLS - - - - 
+Cantrips: Fire Bolt, Light, Minor Illusion, Chocking Grasp
+Spells: Magic Missile, Burning Hands
+Spellcasting Ability: Charisma
+Spell Slots: 2
+Spell Save DC: 13
+Spell Attack Modifier: 5
+
+ - - - - BACKGROUND - - - - 
+Sample Background . I am an experienced criminal with a history of breaking the law. I have spent a lot of time among other criminals and still have contacts within the criminal underworld. I'm far closer than most people to the world of murder, theft, and violence that pervades the underbelly of civilization, and I have survived up to this point by flouting the rules and regulations of society. My specialty is Blackmail. . Skill Proficiencies: Deception, Stealth Tool Proficiencies: One type of gaming set, thieves' tools Equipment: A crowbar, a set of dark common clothes including a hood, and a bell pouch containing 15 gp . Feature: I have a reliable and trustworthy contact who acts as my liaison to a network of other criminals. I know how to get messages to and from my contact, even over great distances; specifically, I know the local messengers, corrupt caravan masters, and seedy sailors who can deliver messages for me. . Personality Trait: I sound like a copy-pasted textbook. . Ideal: Greed. I will do whatever it takes to become wealthy. (Evil) . Bond: My ill gotten gains go to support my family. . Flaw: When faced with a choice between money and my friends, I usually choose the money. 

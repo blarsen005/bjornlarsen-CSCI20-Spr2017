@@ -1,0 +1,22 @@
+Sample Background
+.
+I am an experienced criminal with a history of breaking the law. I have spent a lot of time among other criminals
+and still have contacts within the criminal underworld. I'm far closer than most people to the world of murder,
+theft, and violence that pervades the underbelly of civilization, and I have survived up to this point by
+flouting the rules and regulations of society. My specialty is Blackmail.
+.
+Skill Proficiencies: Deception, Stealth
+Tool Proficiencies: One type of gaming set, thieves' tools
+Equipment: A crowbar, a set of dark common clothes including a hood, and a bell pouch containing 15 gp
+.
+Feature: I have a reliable and trustworthy contact who acts as my liaison to a network of other criminals. I know
+how to get messages to and from my contact, even over great distances; specifically, I know the local messengers,
+corrupt caravan masters, and seedy sailors who can deliver messages for me.
+.
+Personality Trait: I sound like a copy-pasted textbook.
+.
+Ideal: Greed. I will do whatever it takes to become wealthy. (Evil)
+.
+Bond: My ill gotten gains go to support my family.
+.
+Flaw: When faced with a choice between money and my friends, I usually choose the money.

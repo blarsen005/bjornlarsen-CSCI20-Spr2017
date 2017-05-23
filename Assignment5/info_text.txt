@@ -1,16 +1,472 @@
-STEP1
+START
 /*
 You are about to create your character for Dungeons and Dragons,
 5th edition. This program will mostly be using the standard races,
 classes and rules from the 5e Player's Handbook. You can get more
 information about the character creation process using the handbook,
-or you can learn more later throughout the program.
+or you can learn more later throughout the program. Keep in mind
+that you will be free to skip certain steps if you are unsure, and
+your final character sheet output is just that - your character sheet,
+which you can change however you want after you are finished.
 */
 
-HEY HEY HEY!!!!
-
-STEP2
+STATS
 /*
-Yo yo yo up in the ohhhhhhh
-o shit waddup
+You are about to roll your character's base stats. There are two main
+ways stats are typically set in D&D 5e. The main way is to roll 4d6 and
+add the highest 3 values for each stat, but oftentimes people will choose
+to go with a standard array of stats: 15, 14, 13, 12, 10, 8. Both options
+are available here, so if you decide you wouldn't like your stats to be
+rolled randomly, skipping the step will set your stats to the standard
+array.
+.
+One added feature to the stat rolling in this program is that if you
+end up being rolled some really high or really low stats overall, they will
+be rerolled, or else you'd find the players are unbalanced with regards to
+each other. If you roll your stats your overall average won't come out any
+lower than about 10.7 or any higher than about 13.3.
+.
+These stats you will eventually allocate into Strength, Dexterity,
+Constitution, Intelligence, Wisdom, and Charisma. More on this later, but
+keep in mind that you can use what you rolled for your base stats to help
+shape your character. For instance, if you rolled a really low stat, you
+can start thinking about using it to represent some sort of detriment your
+character may have.
+*/
+
+RACES
+/*
+You are currently determining your race. This is a necessary step as it's
+important in determining several other aspects of your character. There are
+many races in the world of D&D, including several others not included in this
+program for simplicity's sake. If you have an idea for a character that demands
+a race other than one listed here, you shouldn't let the limitations of this
+program limit you. Also keep in mind that all racial features listed are just
+what is accessible at level 1, and many more features are added as your character
+levels up. For more information, check out the Player's Handbook.
+.
+List of races:
+Dwarf
+Elf
+Halfling
+Human
+Dragonborn
+Gnome
+Half-Elf
+Half-Orc
+Tiefling
+*/
+
+CLASSES
+/*
+You are currently determining your class. This is a necessary step as it's
+important in determining several other aspects of your character. There are
+many classes in the world of D&D, including several others not included in this
+program for simplicity's sake. If you have an idea for a character that demands
+a class other than one listed here, you shouldn't let the limitations of this
+program limit you. Also keep in mind that all class features listed are just
+what is accessible at level 1, and many more features are added as your character
+levels up. For more information, check out the Player's Handbook.
+.
+List of classes:
+Barbarian
+Bard
+Cleric
+Druid
+Fighter
+Monk
+Paladin
+Ranger
+Rogue
+Sorcerer
+Warlock
+Wizard
+*/
+
+NAME
+/*
+It's time to start entering personal background-related information that differentiates
+our character from every other, and that of course starts with the character's name.
+Your character's name may pertain to your race, background, or anything else that
+is relevant to you. If you haven't decided a name or don't want to enter one yet,
+you can totally skip this as well.
+*/
+
+ALIGNMENT
+/*
+A typical creature in the worlds of D&D has an alignment, which broadly describes its
+moral and personal attitudes. Alignment is a combinalion of two factors: one identifies
+morality (good, evil, or neutral), and the other describes altitudes toward society and
+order (lawful, chaotic, or neutral). Thus, nine distinct alignments define the possible
+combinations. A chart of these is listed below. If you are not sure of your character's
+alignment, don't worry about it and just type /skip, or whatever you want because it
+doesn't really matter.
+.
+These brief summaries of the nine alignments describe the typical behavior of a creature
+with that alignment. Individuais might vary significantly from that typical behavior,
+and few people are perfectly and consistently faithful to the precepts of their alignment.
+.
+LG (Lawful Good) creatures can be counted on to do the right thing as expected by society.
+Gold dragons, paladins, and most dwarves are lawful good.
+NG (Neutral Good) folk do the best they can to help others according to their needs. Many
+celestiais, some cloud giants, and most gnomes are neutral good.
+CG (Chaotic Good) creatures act as their conscience directs, with little regard for what
+others expect. Copper dragons, many elves, and unicorns are chaotic good.
+LN (Lawful Good) individuais act in accordance with law, tradition, or personal codes.
+Many monks and some wizards are lawful neutral.
+N (True Neutral) is the alignment of those who prefer to steer c1ear of moral questions
+and don't take sides, doing what seems best at the time. Lizardfolk, most druids, and
+many humans are neutral.
+CN (Chaotic Neutral) creatures follow their whims, holding their personal freedom above
+all else. Many barbarians and rogues, and some bards, are chaotic neutral.
+LE (Lawful Evil) creatures methodically take what they want, within the limits of acode
+of tradition, loyalty, or order. Devils, blue dragons, and hobgoblins are lawful evil.
+NE (Neutral Evil) is the alignment of those who do whatever they can get away with, without
+compassion or qualms. Many drow, some cloud giants, and yugoloths are neutral evil.
+CE (Chaotic Evil) creatures act with arbitrary violence, spurred by their greed, hatred,
+or bloodlust. Demons, red dragons, and orcs are chaotic evil.
+*/
+
+BACKGROUND
+/*
+For your background in this program it will be entered in the form of a separate text file.
+Included also is an example background text, including all the sections that are background-
+related. Following a similar format as the sample background is recommended for the best
+character sheet, but it not mandatory. On top of this, since you are inputting your own
+file, you can format it however you want with whatever information you think is necessary
+for the character sheet. One other point of note is that backgrounds can often offer bonus
+proficiencies and other features. If using a standard background from the Player's Handbook,
+make sure to include these. Generally it is recommended to modify what is listed in the
+handbook to add some variety, hence your inputting your own sheet.
+*/
+
+ALLOCATION
+/*
+We rolled our stats towards the beginning of the program, now that we finally have our race,
+class, and background set, we hopefully know what kind of character we are going for and it's
+now the most ideal point to allocate our stats. Each stat is pretty straightforward. Strength
+measures physical power, Dexterity measures agility, Constitution measures endurance,
+Intelligence measures reasoning and memory, Wisdom measures perception and insight, and
+Charisma measures force of personality. You will be allocating your stats in the order of
+highest priority to lowest priority, and you'll get to see which base stat will be allocated
+to it. Your stats are subject to bonuses and will not be the exact same as your base stats.
+Your stats also affect your stat modifers and your saving throws, which will be displayed
+after allocation.
+.
+Barbarian - Strength
+Bard - Charisma
+Cleric - Wisdom
+Druid - Wisdom
+Fighter - Strength or Dexterity
+Monk - Dexterity and Wisdom
+Paladin - Strength and Charisma
+Ranger - Dexterity and Wisdom
+Rogue - Dexterity
+Sorcerer - Charisma
+Warlock - Charisma
+Wizard - Intelligence
+*/
+
+SKILLS
+/*
+You are now selecting your skills. Depending on your class and race, you have access to a
+certain number and variety of skills to give yourself proficiency in, similarly to saving
+throws. There are a lot of skills in the game, so you will have to use the chart below to
+determine which skills you have access to (in the program, the skills do not have their
+own variables, so they are represented by a print function). Skills without proficiency
+are simply affected by your stat modifiers.
+.
+.........................ACCESSIBLE SKILLS BY RACE.........................
+Elves - Choose:
+--Perception
+Half-Elves - Choose 2 from:
+--Athletics
+--Acrobatics
+--Stealth
+--Sleight of Hand
+--Arcana
+--Nature
+--History
+--Religion
+--Investigation
+--Animal Handling
+--Perception
+--Insight
+--Survival
+--Medicine
+--Deception
+--Performance
+--Intimidation
+--Persuasion
+Half-Orcs - Choose:
+--Intimidation
+All Else: No skills from race
+.........................ACCESSIBLE SKILLS BY CLASS.........................
+Barbarian - Choose 2 from:
+--Animal Handling
+--Athletics
+--Intimidation
+--Nature
+--Perception
+--Survival
+Bard - Choose 3 from:
+--Athletics
+--Acrobatics
+--Stealth
+--Sleight of Hand
+--Arcana
+--Nature
+--History
+--Religion
+--Investigation
+--Animal Handling
+--Perception
+--Insight
+--Survival
+--Medicine
+--Deception
+--Performance
+--Intimidation
+--Persuasion
+Cleric - Choose 2 from:
+--History
+--Insight
+--Medicine
+--Persuasion
+--Religion
+Knowledge Cleric - Also choose 2 from:
+--Arcana
+--History
+--Nature
+--Religion
+Nature Cleric - Also choose 2 from:
+--Animal Handling
+--Nature
+--Survival
+Druid - Choose 2 from:
+--Arcana
+--Animal Handling
+--Insight
+--Medicine
+--Nature
+--Perception
+--Religion
+--Survival
+Fighter - Choose 2 from:
+--Acrobatics
+--Animal Handling
+--Athletics
+--History
+--Insight
+--Intimidation
+--Perception
+--Survival
+Monk - Choose 2 from:
+--Acrobatics
+--Athletics
+--History
+--Insight
+--Religion
+--Stealth
+Paladin - Choose 2 from:
+--Athletics
+--Insight
+--Intimidation
+--Medicine
+--Persuasion
+--Religion
+Ranger - Choose 3 from:
+--Animal Handling
+--Athletics
+--Insight
+--Investigation
+--Nature
+--Perception
+--Stealth
+--Survival
+Rogue - Choose 4 from:
+--Acrobatics
+--Athletics
+--Deception
+--Insight
+--Intimidation
+--Investigation
+--Perception
+--Performance
+--Persuasion
+--Sleight of Hand
+--Stealth
+Sorcerer - Choose 2 from:
+--Arcana
+--Deception
+--Insight
+--Intimidation
+--Persuasion
+--Religion
+Warlock - Choose 2 from:
+--Arcana
+--Deception
+--History
+--Intimidation
+--Investigation
+--Nature
+--Religion
+Wizard - Choose 2 from:
+--Arcana
+--History
+--Insight
+--Investigation
+--Medicine
+--Religion
+.........................ACCESSIBLE SKILLS BY BACKGROUND.........................
+Backgrounds vary greatly, but your background should be able to fall into a
+category as can be seen in the Player's Handbook. Regardless, all backgrounds
+grant 2 different skills, so choose two skills from the list that you think
+would pertain to your background:
+--Athletics
+--Acrobatics
+--Stealth
+--Sleight of Hand
+--Arcana
+--Nature
+--History
+--Religion
+--Investigation
+--Animal Handling
+--Perception
+--Insight
+--Survival
+--Medicine
+--Deception
+--Performance
+--Intimidation
+--Persuasion
+*/
+
+LANGUAGES
+/*
+All races have access to "Common", the mostly universal language that connect
+the many peoples of D&D and their respective languages. Certain classes also gain
+access to more languages - If you receive specific bonuses you can access many
+languages that are inaccessible otherwise. Here is a chart you can use to find
+out what races and classes speak each language, and also see all the other languages
+you might be able to choose:
+.
+Common: All Races
+Dwarvish: Dwarves
+Elvish: Elves, Half-Elves
+Giant: -
+Gnomish: Gnomes
+Goblin: -
+Halfling: Halflings
+Orc: Half-Orcs
+Abyssal: -
+Celestial: -
+Draconic: Dragonborn, Draconic Sorcerers
+Deep Speech: -
+Infernal: Tiefling
+Primordial: -
+Sylvan: -
+Undercommon: -
+.
+IF you are one of the following races or classes, you can receive bonus
+languages you wouldn't know otherwise:
+High Elves, Humans, and Half-Elves: +1 bonus language
+Rangers: +1 bonus language
+Knowledge Clerics: +2 bonus languages
+*/
+
+ARMOR
+/*
+Certain classes have proficiency in certain types of armor. If you do not have
+proficiency, you will suffer from disadvantages and inability to cast spells if
+using the armor. A chart below shows which classes have proficiency in what armor
+varieties. Here you will get to select your armor variety, but the catch is that
+it will remove some of your initial wealth. As far as the armor types: The light
+armor class grants you a base AC plus your dexterity modifier, medium gives a max
+of +2 dexterity, and heavy grants no bonus AC. Also, Heavy armor and certain
+medium armors grant disadvantage on stealth checks. Also , certain strength
+parameters are required if rmor if heavy enough. If you choose to not roll with
+armor, then your AC is 10 + dex mod.
+.
+Barbarian - Light and medium armor, shields
+Bard - Light armor
+Cleric - Light and medium armor, shields
+....Life Cleric - And Heavy armor
+....Nature Cleric - And Heavy armor
+....Tempest Cleric - And Heavy Armor
+....War Cleric - And Heavy Armor
+Druid - Light and medium armor (nonmetal), shields (nonmetal)
+Fighter - All armor, shields
+Monk - No proficencies
+Paladin - All armor, shields
+Ranger - Light and medium armor, shields
+Rogue - Light armor
+Sorcerer - No proficiencies
+Warlock - Light armor
+Wizard - No proficiencies
+.
+Mountain Dwarf - Light and medium armor
+*/
+
+WEAPONS
+/*
+Like the last step, the program is going to assume you have proficiency with the
+weapon you select. You can confirm this by checking the chart below. You are
+using the remainder of your wealth (if you choose) to purchase whatever weapon
+you choose. Highly recommended to confer with the below charts to make sure your
+character can use it properly. You can also feel free to add more weapons with
+remaining gold after creating the character sheet or check the players handbook
+to see pre-set equipment.
+.
+Barbarian: simple and martial weapons
+Bard: simple weapons, hand crossbows, longswords, rapiers, shortswords
+Cleric: simple weapons
+....Tempest Cleric: add martial weapons
+....War Cleric: add martial weapons
+Druid: clubs, daggers, darts, javelins, maces, quarterstaffs, scimitars, sickles, slings, spears
+Fighter:
+Monk: simple and martial weapons (You'll want to take Unarmed strike)
+Paladin: simple and martial weapons
+Ranger: simple and martial weapons
+Rogue: simple weapons, hand crossbows, longswords, rapiers, shortswords
+Sorcerer: daggers, darts, slings, quarterstaffs, light crossbows
+Warlock: simple weapons
+Wizard: daggers, darts, slings, quarterstaffs, light crossbows
+.
+Ammunition: You can use a weapon that has the ammunition property to make a ranged attack
+only if you have ammunition to fire from the weapon.
+Finesse: When making an attack with a finesse weapon, you use your choice of your Strength
+or Dexterity modifier for the attack and damage rolls.
+Heavy: Small creatures have disadvantage on attack rolls with heavy weapons.
+Light: A light weapon is small and easy to handle, making it ideal for use when fighting
+with two weapons.
+Loading: Because of the time required to load this weapon, you can fire only one piece of
+ammunition from it when you use an action, bonus action, or reaction to fire it,
+regardless of the number of attacks you can normally make.
+Range: A weapon that can be used to make a ranged attack has a range shown in parentheses
+after the ammunition or thrown property.
+Reach: This weapon adds 5 feet to your reach when you attack with it.
+Special: Aweapon with the special property has unusual rules governing its use.
+Thrown: If a weapon has the thrown property, you can throw the weapon to make a ranged attack.
+Two-Handed: This weapon requires two hands to use.
+Versatile: This weapon can be used with one or two hands.
+*/
+
+EQUIPMENT
+/*
+Each class gets some extra equipment they can choose from. Each kind of pack contains a variety
+of different items you can find in the player's handbook. It's important to note that
+backgrounds give access to various equipments, so be sure to check if your background gives
+you anything special.
+*/
+
+SPELLS
+/*
+You have chosen one of the spellcasting classes, so that means you are a magical person who
+can cast spells. The different classes each get different spells, so depending on which
+you picked, you will have access to completely different spell lists. When you start this
+step of the program you'll get to see the different spells you can or should choose.
+After selecting these, you'll also get to see your number of spell slots, and your
+spellcasting ability.
 */
